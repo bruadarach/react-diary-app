@@ -1,0 +1,68 @@
+#weatherdisplay {
+    width: 30%;
+    display:flex;
+}
+
+#weather-section-one{
+    display:flex;
+    flex-direction: column;
+    flex:3.5;
+}
+
+.weather-info-one {
+    display:flex;
+    flex:2;
+}
+
+.weather-emoji{
+    flex:1;
+}
+
+.weather-desc-temp{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+}
+
+.weather-desc{
+    flex:1;
+}
+
+.weather-temp{
+    flex:2.5;
+}
+
+.weather-info-two{
+    display:flex;
+    flex:1;
+    
+}
+
+.weather-max-temp{
+    flex:1;
+}
+
+.weather-min-temp{
+    flex:1;
+}
+
+#weather-section-two{
+    display:flex;
+    flex:1.5;
+    
+}
+
+.weather-info-three{
+    display:flex;
+    flex-direction: column;
+    flex:1; 
+}
+
+.weather-wind{
+    flex:1;
+}
+
+.weather-hum{
+    flex:1;
+}
+

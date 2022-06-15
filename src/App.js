@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import WeatherDisplay from './pages/WeatherDisplay';
+import DiaryToWrite from './pages/DiaryToWrite';
+import DiaryList from './pages/DiaryList';
 
 function App() {
+  const [weather, setWeather] = useState([])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Diary</h1>
+      <WeatherDisplay setWeather = {setWeather} weather={weather}/>
+      <DiaryToWrite/>
+      <DiaryList/>
     </div>
   );
 }
